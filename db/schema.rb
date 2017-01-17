@@ -22,9 +22,7 @@ ActiveRecord::Schema.define(version: 20170117190614) do
     t.datetime "updated_at",             null: false
     t.string   "slug"
     t.integer  "status",     default: 0
-    t.integer  "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
-    t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -56,25 +54,12 @@ ActiveRecord::Schema.define(version: 20170117190614) do
     t.datetime "updated_at",       null: false
   end
 
-  create_table "technologies", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "portfolio_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id", using: :btree
-  end
-
-  create_table "topics", force: :cascade do |t|
-    t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
+    t.string   "name"
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
@@ -87,6 +72,4 @@ ActiveRecord::Schema.define(version: 20170117190614) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  add_foreign_key "blogs", "topics"
-  add_foreign_key "technologies", "portfolios"
 end
