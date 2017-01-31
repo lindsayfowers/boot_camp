@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
   layout 'portfolio'
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
@@ -25,26 +26,20 @@ class PortfoliosController < ApplicationController
 
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
-
-    if @portfolio_item.save
-      redirect_to show_portfolio_path(@portfolio_item)
+      if @portfolio_item.save
+        redirect_to show_portfolio_path(@portfolio_item)
     else
       render :new
     end
   end
 
   def show
-    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def edit
-    @portfolio_item = Portfolio.find(params[:id])
-    3.times { @portfolio_item.technologies.build }
   end
 
   def update
-    @portfolio_item = Portfolio.find(params[:id])
-
     if @portfolio_item.update(portfolio_params)
       redirect_to show_portfolio_path(@portfolio_item )
     else
@@ -53,7 +48,6 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    @portfolio_item = Portfolio.find(params[:id])
     @portfolio_item.destroy
     redirect_to portfolios_path
   end
@@ -68,5 +62,9 @@ class PortfoliosController < ApplicationController
                                       :thumb_image,
                                       technologies_attributes: [:name]
                                       )
+  end
+
+  def set_portfolio_item
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end
