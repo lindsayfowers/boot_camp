@@ -2,14 +2,14 @@
   <h1 class="cover-heading">Rails News</h1>
  
   <div class="row">
-  <% @tweets.each do |tweet| %>
-    <div class="col-md-6">
-      <div class="" lass="tech-news">
-        <div class="card">
-          <%= twitter_parser tweet %>
+    <% @tweets.each do |tweet| %>
+      <div class="col-md-6">
+        <div class="tech-news">
+          <div class="card">
+            <%= twitter_parser tweet %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
