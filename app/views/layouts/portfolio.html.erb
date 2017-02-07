@@ -8,13 +8,14 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
+    <%= favicon_link_tag 'favicons/favicon (1).ico' %>
+
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
    <%= render 'shared/portfolio_nav' %>
-
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
@@ -22,7 +23,5 @@
     <%= render 'shared/portfolio_footer' %>
 
     <%= alerts %>
-
-    <%= source_helper("application") %>
   </body>
 </html>
