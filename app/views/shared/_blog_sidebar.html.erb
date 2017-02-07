@@ -4,12 +4,14 @@
     <p>I'll fill this in later</p>
   </div>
 
-<div class="sidebar-module">
-  <h4>Topics</h4>
-  <% @side_bar_topics.each do |topic| %>
-    <p><%= link_to topic.title, topic_path(topic) %></p>
-  <% end %>
-</div>
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
 
   <div class="sidebar-module">
     <h5>Find me elsewhere:</h5>
