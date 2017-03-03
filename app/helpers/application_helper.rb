@@ -31,10 +31,6 @@ module ApplicationHelper
         title: 'About Me'
       },
             {
-        url: contact_path,
-        title: 'Contact'
-      },
-            {
         url: blogs_path,
         title: 'Blog'
       },
