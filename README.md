@@ -1,6 +1,6 @@
 # boot_camp
 
-> This is a Ruby on Rails 5 application that allows users to create their own portfolios.
+> Ruby on Rails 5 application for my personal portfolio.
 
 ## Features
 
