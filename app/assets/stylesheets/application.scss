@@ -211,6 +211,18 @@ h6, .h6 {
 
 .app-footer {
   color: white;
+  float: right;
+  font-size: 14px;
+  display: inline-block;
+}
+
+
+.app-footer-contact {
+  display: inline-block;
+  float: left;
+  padding-right: 20px;
+  color: white;
+  font-size: 14px;
 }
 
 .app-card-container {
