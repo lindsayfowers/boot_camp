@@ -66,11 +66,6 @@ h6, .h6 {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
-}
-
 
 /*
  * Header
@@ -137,8 +132,30 @@ h6, .h6 {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  position: fixed;
+  bottom: 0;
 }
 
+.app-footer-social {
+  float: left;
+  padding-right: 32px;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.app-footer-copyright {
+  color: white;
+  font-size: 15px;
+  display: inline-block;
+}
+
+
+.app-footer-contact {
+  display: inline-block;
+  padding-right: 20px;
+  color: white;
+  font-size: 15px;
+}
 
 /*
  * Affix and center
@@ -150,10 +167,7 @@ h6, .h6 {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -207,22 +221,6 @@ h6, .h6 {
   background-size: 2200px 1400px;
   -webkit-background-size: 2200px 1400px;
   -moz-background-size: 2200px 1400px;
-}
-
-.app-footer {
-  color: white;
-  float: right;
-  font-size: 14px;
-  display: inline-block;
-}
-
-
-.app-footer-contact {
-  display: inline-block;
-  float: left;
-  padding-right: 20px;
-  color: white;
-  font-size: 14px;
 }
 
 .app-card-container {

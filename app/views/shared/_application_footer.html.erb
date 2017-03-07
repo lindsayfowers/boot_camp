@@ -1,7 +1,19 @@
 <div class="mastfoot">
-  <div class="inner">
-    <p class="app-footer"><%= copyright_generator %></p>
-    <p class="app-footer-contact"><i class="fa fa-phone"></i><%='(801) 520-2307' %></p>
-    <p class="app-footer-contact"><i class="fa fa-envelope"></i><%= 'lfowers@gmail.com' %></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="app-footer-social"><a href="https://github.com/lindsayfowers"><%= fa_icon "github" %></p>
+        <p class="app-footer-social"><a href="https://www.instagram.com/loogiefowser/?hl=en"><%= fa_icon "instagram" %></a></p>
+        <p class="app-footer-social"><a href="https://www.facebook.com/lindsay.fowers"><%= fa_icon "facebook" %></a></p>
+        <p class="app-footer-social"><a href="https://twitter.com/LoogieFowser"><%= fa_icon "twitter" %></a></p>
+      </div>
+      <div class="col-md-4">
+        <p class="app-footer-contact"><i class="fa fa-phone"></i><%=" " '(801) 520-2307' %></p>
+        <p class="app-footer-contact"><i class="fa fa-envelope"></i><%= " " 'lfowers@gmail.com' %></p>
+      </div>
+      <div class="col-md-4">
+        <p class="app-footer-copyright"><%= copyright_generator %></p>
+      </div>
+    </div>
   </div>
 </div>
