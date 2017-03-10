@@ -6,7 +6,7 @@ included do
 end
 
   def set_page_defaults
-    @page_title = "DevcampPortfolio | My Portfolio Website"
+    @page_title = "My Portfolio"
     @seo_keywords = "Lindsay Fowers portfolio"
   end
 end  
