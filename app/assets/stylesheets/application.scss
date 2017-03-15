@@ -3,9 +3,9 @@
 
 @font-face {
     font-family: 'BlackDiamond';
-    src: url('BlackDiamond.otf'),
-        url('BlackDiamond.otf') format('opentype'),
-        url('BlackDiamond.ttf') format('truetype')
+    src:font-url('BlackDiamond.otf');
+    src:font-url('BlackDiamond.otf') format('opentype');
+    src:font-url('BlackDiamond.ttf') format('truetype'),
 }
 
 /*
