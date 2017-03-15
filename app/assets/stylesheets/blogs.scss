@@ -2,6 +2,13 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+    font-family: 'BlackDiamond';
+    src:font-url('BlackDiamond.ttf');
+    src:font-url('BlackDiamond.ttf') format('truetype');
+    src:font-url('BlackDiamond.otf') format('opentype');
+}
+
 /*
  * Globals
  */

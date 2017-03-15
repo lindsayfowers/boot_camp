@@ -3,6 +3,13 @@
 @import "gritter";
 
 @font-face {
+    font-family: 'BlackDiamond';
+    src:font-url('BlackDiamond.ttf');
+    src:font-url('BlackDiamond.ttf') format('truetype');
+    src:font-url('BlackDiamond.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'Lato';
   src:font-url('Lato-Regular.ttf');
 }
