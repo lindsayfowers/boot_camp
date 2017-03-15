@@ -1,6 +1,13 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-face {
+    font-family: 'BlackDiamond';
+    font-url('BlackDiamond.otf');
+    font-url('BlackDiamond.otf') format('opentype');
+    font-url('BlackDiamond.ttf') format('truetype'),
+}
+
 /*
  * Globals
  */
@@ -77,7 +84,7 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
-  font-family: "Black Diamond";
+  font-family: "BlackDiamond";
   font-size: 80px;
 }
 
