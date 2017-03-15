@@ -1,13 +1,11 @@
 @import "bootstrap";
 @import "gritter";
 
-@include font-face(BlackDiamond, fonts/BlackDiamond);
-
 @font-face {
     font-family: 'BlackDiamond';
-    font-url('BlackDiamond.otf');
-    font-url('BlackDiamond.otf') format('opentype');
-    font-url('BlackDiamond.ttf') format('truetype'),
+    src: url('BlackDiamond.otf'),
+        url('BlackDiamond.otf') format('opentype'),
+        url('BlackDiamond.ttf') format('truetype')
 }
 
 /*
